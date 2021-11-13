@@ -3,6 +3,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * This class loads and handles the gazetter
+ */
 public class Gazetter {
     private static HashMap<String, String> gazetter;
 
@@ -22,14 +25,26 @@ public class Gazetter {
         }
     }
 
+    /**
+     * Returns the full gazetter
+     * 
+     * @return Map<String, String>
+     */
     public static Map<String, String> getAllSpacialRelations() {
         if (gazetter == null)
             loadSpacialRelationsFromFile();
         return gazetter;
     }
-    
+
+    /**
+     * Returns the category of the given string s. If s is not listed, it returns
+     * null.
+     * 
+     * @param s
+     * @return String
+     */
     public static String getCategory(String s) {
-        if(gazetter == null)
+        if (gazetter == null)
             loadSpacialRelationsFromFile();
         return gazetter.get(s);
     }

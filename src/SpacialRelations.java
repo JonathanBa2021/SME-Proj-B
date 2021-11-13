@@ -1,6 +1,9 @@
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * This class loads and handles the list of spacial relations
+ */
 public class SpacialRelations {
     private static List<String> spacialRelations;
 
@@ -12,14 +15,25 @@ public class SpacialRelations {
         }
     }
 
+    /**
+     * Returns all spacial relations
+     * 
+     * @return List<String>
+     */
     public static List<String> getAllSpacialRelations() {
         if (spacialRelations == null)
             loadSpacialRelationsFromFile();
         return spacialRelations;
     }
-    
+
+    /**
+     * Checks whether a given string s is a spatial relation
+     * 
+     * @param s
+     * @return boolean
+     */
     public static boolean isSpacialRelation(String s) {
-        if(spacialRelations == null)
+        if (spacialRelations == null)
             loadSpacialRelationsFromFile();
         return spacialRelations.contains(s);
     }
