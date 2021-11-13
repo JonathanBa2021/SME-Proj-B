@@ -1,0 +1,4 @@
+Bamberg, city
+Regnitz, river
+Hamburg, city
+Germany, country

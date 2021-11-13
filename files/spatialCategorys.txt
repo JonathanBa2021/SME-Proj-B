@@ -1,0 +1,6 @@
+river
+city
+church
+pedestrian street
+theatre
+city center

@@ -1,0 +1,65 @@
+Sentence #1 (27 tokens):
+St. Catherine is the largest protestant church, located in the city center at the entrance to the Zeil, the central pedestrian street for shopping.
+
+Tokens:
+[Text=St. CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=St. NamedEntityTag=LOCATION]
+[Text=Catherine CharacterOffsetBegin=4 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Catherine NamedEntityTag=LOCATION]
+[Text=is CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=largest CharacterOffsetBegin=21 CharacterOffsetEnd=28 PartOfSpeech=JJS Lemma=largest NamedEntityTag=O]
+[Text=protestant CharacterOffsetBegin=29 CharacterOffsetEnd=39 PartOfSpeech=JJ Lemma=protestant NamedEntityTag=RELIGION]
+[Text=church CharacterOffsetBegin=40 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=church NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=46 CharacterOffsetEnd=47 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=located CharacterOffsetBegin=48 CharacterOffsetEnd=55 PartOfSpeech=VBN Lemma=locate NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=city CharacterOffsetBegin=63 CharacterOffsetEnd=67 PartOfSpeech=NN Lemma=city NamedEntityTag=O]
+[Text=center CharacterOffsetBegin=68 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=center NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=75 CharacterOffsetEnd=77 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=entrance CharacterOffsetBegin=82 CharacterOffsetEnd=90 PartOfSpeech=NN Lemma=entrance NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=91 CharacterOffsetEnd=93 PartOfSpeech=IN Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=94 CharacterOffsetEnd=97 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Zeil CharacterOffsetBegin=98 CharacterOffsetEnd=102 PartOfSpeech=NNP Lemma=Zeil NamedEntityTag=DATE NormalizedNamedEntityTag=Zeil ]
+[Text=, CharacterOffsetBegin=102 CharacterOffsetEnd=103 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=104 CharacterOffsetEnd=107 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=central CharacterOffsetBegin=108 CharacterOffsetEnd=115 PartOfSpeech=JJ Lemma=central NamedEntityTag=O]
+[Text=pedestrian CharacterOffsetBegin=116 CharacterOffsetEnd=126 PartOfSpeech=NN Lemma=pedestrian NamedEntityTag=O]
+[Text=street CharacterOffsetBegin=127 CharacterOffsetEnd=133 PartOfSpeech=NN Lemma=street NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=134 CharacterOffsetEnd=137 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=shopping CharacterOffsetBegin=138 CharacterOffsetEnd=146 PartOfSpeech=NN Lemma=shopping NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=146 CharacterOffsetEnd=147 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+
+Dependency Parse (enhanced plus plus dependencies):
+root(ROOT-0, church-7)
+compound(Catherine-2, St.-1)
+nsubj(church-7, Catherine-2)
+cop(church-7, is-3)
+det(church-7, the-4)
+amod(church-7, largest-5)
+amod(church-7, protestant-6)
+punct(church-7, ,-8)
+acl(church-7, located-9)
+case(center-13, in-10)
+det(center-13, the-11)
+compound(center-13, city-12)
+obl:in(located-9, center-13)
+case(entrance-16, at-14)
+det(entrance-16, the-15)
+nmod:at(center-13, entrance-16)
+case(Zeil-19, to-17)
+det(Zeil-19, the-18)
+nmod:to(entrance-16, Zeil-19)
+punct(church-7, ,-20)
+det(street-24, the-21)
+amod(street-24, central-22)
+compound(street-24, pedestrian-23)
+appos(church-7, street-24)
+case(shopping-26, for-25)
+nmod:for(street-24, shopping-26)
+punct(church-7, .-27)
+
+Extracted the following NER entity mentions:
+St. Catherine   LOCATION        LOCATION:0.32940764837887127
+protestant      RELIGION        -
+Zeil    DATE    DATE:0.50309284992101
