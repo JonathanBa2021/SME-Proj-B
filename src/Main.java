@@ -4,7 +4,7 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        List<String> file = ReadInputFile.readFile("files/input3.txt.out");
+        List<String> file = ReadInputFile.readFile("files/input2.txt.out");
         file = FormatConverter.stanfordNLPToOur(file);
         // System.out.println(StringHelper.concatList(file));
 
@@ -13,6 +13,11 @@ public class Main {
 
         EntitiesAndRelations entitiesAndRelations = EntitiesAndRelations.extractEntitiesAndRelations(words);
 
-        System.out.println(entitiesAndRelations);
+        // System.out.println(entitiesAndRelations);
+
+        ConceptClassConstraints conceptClassConstraints = ConceptClassConstraints
+                .generateConceptClassConstrainsts(entitiesAndRelations);
+
+        System.out.println(conceptClassConstraints);
     }
 }

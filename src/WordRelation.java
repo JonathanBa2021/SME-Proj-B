@@ -5,7 +5,7 @@
  * <li>relation: The relation between the words</li>
  * </ul>
  */
-public class WordRelation {
+public class WordRelation implements IRelation {
     public Word wordOne;
     public Word wordTwo;
 
@@ -25,5 +25,26 @@ public class WordRelation {
     @Override
     public String toString() {
         return relation + "(" + wordOne.word + ", " + wordTwo.word + ")";
+    }
+
+    /**
+     * Checks whether the Relation uses a given word v
+     * 
+     * @param v
+     * @return boolean
+     */
+    @Override
+    public boolean containsWord(Word v) {
+        return wordOne.equals(v) || wordTwo.equals(v);
+    }
+
+    /**
+     * Returns true, because this object is of type @WordRelation
+     * 
+     * @return boolean
+     */
+    @Override
+    public boolean isWordRelation() {
+        return true;
     }
 }

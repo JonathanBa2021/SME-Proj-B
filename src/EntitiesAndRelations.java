@@ -93,6 +93,11 @@ public class EntitiesAndRelations {
             }
         }
 
+        // Redo Numbering so there are no 'blanks'
+        for (int i = 0; i < words.size(); i++) {
+            words.get(i).placeInSentence = i;
+        }
+
         return words;
     }
 
