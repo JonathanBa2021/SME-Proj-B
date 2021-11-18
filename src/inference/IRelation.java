@@ -1,3 +1,5 @@
+package inference;
+
 public interface IRelation {
     /**
      * Checks whether this relation contains a given word

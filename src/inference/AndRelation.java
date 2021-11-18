@@ -1,3 +1,5 @@
+package inference;
+
 import java.util.List;
 
 public class AndRelation implements IRelation {

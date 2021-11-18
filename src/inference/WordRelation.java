@@ -1,3 +1,5 @@
+package inference;
+
 /**
  * This class represents a relation between two words. It includes:
  * <ul>
