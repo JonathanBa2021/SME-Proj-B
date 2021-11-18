@@ -29,6 +29,7 @@ public class ConceptClassConstraints {
             }
             if (!c.inferredEntities.contains(w)) {
                 for (Word v : entitiesAndRelations.unnamnedEntities) {
+                    // TODO Fix Implementation
                     boolean vIsUsed = false;
                     for (IRelation relation : c.relations) {
                         if (relation.containsWord(v)) {

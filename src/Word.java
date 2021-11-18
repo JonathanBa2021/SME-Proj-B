@@ -6,7 +6,7 @@ import java.util.Comparator;
  * <li>word: The word as a string</li>
  * <li>partOfSpeech: The Part ff Speech as a string</li>
  * <li>placeInSentence: The position at which the word was located in the
- * sentence</li>
+ * sentence. If this value is -1, the word is not part of the sentence</li>
  * </ul>
  */
 public class Word implements Comparator<Word> {

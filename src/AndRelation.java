@@ -23,13 +23,23 @@ public class AndRelation implements IRelation {
     }
 
     /**
-     * Returns false, because this object is not a word relation
+     * Returns false, because this object is not of type @WordRelation
      * 
      * @return boolean
      */
     @Override
     public boolean isWordRelation() {
         return false;
+    }
+
+    /**
+     * Returns true, because this object is of type @ANDRelation
+     * 
+     * @return boolean
+     */
+    @Override
+    public boolean isANDRelation() {
+        return true;
     }
 
     /**
@@ -41,4 +51,5 @@ public class AndRelation implements IRelation {
     public String toString() {
         return "HGEGEG";
     }
+
 }

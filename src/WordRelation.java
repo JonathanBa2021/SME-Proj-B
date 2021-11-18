@@ -47,4 +47,14 @@ public class WordRelation implements IRelation {
     public boolean isWordRelation() {
         return true;
     }
+
+    /**
+     * Returns false, because this object is not of type @ANDRelation
+     * 
+     * @return boolean
+     */
+    @Override
+    public boolean isANDRelation() {
+        return false;
+    }
 }

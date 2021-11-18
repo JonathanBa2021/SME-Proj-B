@@ -13,4 +13,11 @@ public interface IRelation {
      * @return
      */
     public boolean isWordRelation();
+
+    /**
+     * Checks whether this object is of type ANDRelation
+     * 
+     * @return
+     */
+    public boolean isANDRelation();
 }
