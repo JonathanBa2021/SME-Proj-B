@@ -84,7 +84,7 @@ public class EntitiesAndRelations {
      * @return List<Word>
      */
     private static List<Word> concatAdjacentNouns(List<Word> words) {
-        // TODO Improve Implementation (e.g with the namedEntityTagFromNLP)
+        // TODO Improve Implementation (e.g with the namedEntityTag from NLP)
         for (int i = 0; i < words.size() - 1; i++) {
             if (words.get(i).isNoun() && words.get(i + 1).isNoun()) {
                 Word word = words.get(i + 1);

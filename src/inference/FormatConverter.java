@@ -1,5 +1,6 @@
 package inference;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -43,16 +44,21 @@ class FormatConverter {
     }
 
     /**
-     * Turns the given list of strings into a list of type @Word
+     * Turns the given list of strings into a list of type @Word. The strings have
+     * to be formated in our notation
      * 
      * @param in
      * @return List<Word>
+     * @throws IOException
      */
-    public static List<Word> convertToWords(List<String> in) {
+    public static List<Word> convertToWords(List<String> in) throws IOException {
         List<Word> result = new ArrayList<>();
 
         for (int i = 0; i < in.size(); i++) {
             String[] split = in.get(i).split(DELIMITER);
+            if (split.length < 2)
+                throw new IOException("Input for convertToWords is not in correct Format");
+
             Word newWord = new Word(split[0].trim(), split[1].trim(), i);
 
             result.add(newWord);
